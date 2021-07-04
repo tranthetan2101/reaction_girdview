@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.side-nav {
+    position: fixed;
+    right: 0;
+    top: 100px;
+    box-shadow: 0 0 30px #a0a0a0;
+}
+
+.side-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.side-nav ul li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(.././images/sidemenu-icons.png);
+    background-size: cover;
+}
+
+.side-nav ul li:nth-child(1) a {
+    background-position: 0 0;
+}
+
+.side-nav ul li:nth-child(1):hover a {
+    background-position: 0 -40px;
+}
+
+.side-nav ul li:nth-child(2) a {
+    background-position: 0 -80px;
+}
+
+.side-nav ul li:nth-child(2):hover a {
+    background-position: 0 -120px;
+}
+
+.side-nav ul li:nth-child(3) a {
+    background-position: 0 -160px;
+}
+
+.side-nav ul li:nth-child(3):hover a {
+    background-position: 0 -200px;
+}
+
+.side-nav ul li:nth-child(4) a {
+    background-position: 0 -240px;
+}
+
+.side-nav ul li:nth-child(4):hover a {
+    background-position: 0 -280px;
+}
+
+.side-nav ul li:nth-child(5) a {
+    background-position: 0 -320px;
+}
+
+.side-nav ul li:nth-child(5):hover a {
+    background-position: 0 -360px;
+}
+
+.side-nav ul li {
+    position: relative;
+    padding: 15px;
+    background: #fff;
+}
+
+.side-nav ul li .sub-item {
+    background: #333;
+    color: #fff;
+    padding: 0 15px;
+    height: 70px;
+    line-height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    transition: 0.5s;
+    border-radius: 5px 0 0 5px;
+}
+
+.side-nav ul li:hover .sub-item {
+    transform: translateX(-100%);
+}
+.topnav a {
+    color: #000;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nava{
+    text-align: center;
+    padding:10px 0 5px 0;
+}
+
+.active {
+    float: left;
+    margin-left: 20px;
+}
+
+body {
+    background-color: #ECF1F2;
+}
+
+.gird__view {
+    margin:30px 65px 0 65px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.card__content{
+    margin: 10px;
+}
+.footer{
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+.checked{
+    color: yellow;
+}

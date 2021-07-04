@@ -1,0 +1,96 @@
+html,
+      body {
+        margin-top: 200px;
+        font-family: sans-serif;
+        align-items: center;
+        justify-content: center;
+      }
+      .feed {
+        position: relative;
+      }
+      .feed .like-btn {
+        width: 200px;
+        height: 20px;
+        background: #d0d0d0;
+        position: absolute;
+        cursor: pointer;
+        margin-left: 600px;
+        border-radius: 20px;
+      }
+      .feed .like-btn .reaction-box {
+        position: absolute;
+        width: 312px;
+        height: 55px;
+        background: #fff;
+        border-radius: 28px;
+        left: -25px;
+        bottom: 35px;
+        display: none;
+        box-shadow: 2px 2px 4px #888;
+      }
+
+      .feed .like-btn .reaction-box .reaction-icon {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        border-radius: 50%;
+        margin: 8px -1px 0 8px;
+        text-align: center;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        opacity: 0;
+        transform: translate(0, 100px) scale(0);
+      }
+      .feed .like-btn .reaction-box .reaction-icon.show {
+        opacity: 1;
+        transform: translate(0, 0) scale(1.4);
+      }
+      .feed .like-btn .reaction-box .reaction-icon label {
+        padding: 3px 5px;
+        position: relative;
+        top: -15px;
+        border-radius: 10px;
+        font-size: 8px;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.6);
+        visibility: hidden;
+      }
+
+      .feed .like-btn:hover {
+        background: #333;
+      }
+      .feed .like-btn:hover .reaction-box .reaction-icon:hover {
+        transform: translate(0, -10px) scale(1.8);
+      }
+      .feed .like-btn:hover .reaction-box .reaction-icon:hover label {
+        visibility: visible;
+      }
+      #like {
+        background: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/e4299734559659.56d57de04bda4.gif");
+        background-position: center;
+        background-size: cover;
+      }
+      #love {
+        background: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/65ea2034559659.56d57de06cea2.gif");
+        background-position: center;
+        background-size: cover;
+      }
+      #haha {
+        background: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/35c9bf34559659.56d57de0eb467.gif");
+        background-position: center;
+        background-size: cover;
+      }
+      #wow {
+        background: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/6105c734559659.56d59c54f0d05.gif");
+        background-position: center;
+        background-size: cover;
+      }
+      #sad {
+        background: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/3eee1d34559659.56d59de621daa.gif");
+        background-position: center;
+        background-size: cover;
+      }
+      #angry {
+        background: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/e66e6e34559659.56d57de095aee.gif");
+        background-position: center;
+        background-size: cover;
+      }
